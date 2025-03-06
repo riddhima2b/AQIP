@@ -1,0 +1,14 @@
+#install necessary libraries
+!pip install numpy -q
+!pip install scikit-learn -q
+!pip install streamlit -q
+!pip install streamlit-option-menu -q !pip install pandas -q
+!pip install numpy -q
+
+from google.colab import drive 
+drive.mount('/content/drive')
+
+!npm install localtunnel #to access the website
+!streamlit run '/content/apfront67.py' & npx localtunnel --port 8501
+
+#run in google colab preferably
